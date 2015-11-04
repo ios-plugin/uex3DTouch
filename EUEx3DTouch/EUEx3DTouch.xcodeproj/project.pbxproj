@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42F3B9901BE9D97300C2D35C /* EUEx3DTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B98F1BE9D97300C2D35C /* EUEx3DTouch.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42F3B9881BE9D97300C2D35C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42F3B98A1BE9D97300C2D35C /* libuex3DTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuex3DTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F3B98D1BE9D97300C2D35C /* EUEx3DTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUEx3DTouch.h; sourceTree = "<group>"; };
+		42F3B98F1BE9D97300C2D35C /* EUEx3DTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUEx3DTouch.m; sourceTree = "<group>"; };
+		42F3B9971BE9D9FB00C2D35C /* EUExBase+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EUExBase+Bundle.h"; sourceTree = "<group>"; };
+		42F3B9981BE9D9FB00C2D35C /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
+		42F3B9991BE9D9FB00C2D35C /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
+		42F3B99B1BE9D9FB00C2D35C /* WidgetOneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetOneDelegate.h; sourceTree = "<group>"; };
+		42F3B99E1BE9D9FB00C2D35C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		42F3B99F1BE9D9FB00C2D35C /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		42F3B9A01BE9D9FB00C2D35C /* MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Digest.h; sourceTree = "<group>"; };
+		42F3B9A11BE9D9FB00C2D35C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		42F3B9A21BE9D9FB00C2D35C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		42F3B9A31BE9D9FB00C2D35C /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		42F3B9A41BE9D9FB00C2D35C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		42F3B9A51BE9D9FB00C2D35C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		42F3B9A61BE9D9FB00C2D35C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		42F3B9A71BE9DA7400C2D35C /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		42F3B9B11BE9DBDF00C2D35C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42F3B9871BE9D97300C2D35C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42F3B9811BE9D97300C2D35C = {
+			isa = PBXGroup;
+			children = (
+				42F3B98C1BE9D97300C2D35C /* EUEx3DTouch */,
+				42F3B98B1BE9D97300C2D35C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42F3B98B1BE9D97300C2D35C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42F3B98A1BE9D97300C2D35C /* libuex3DTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42F3B98C1BE9D97300C2D35C /* EUEx3DTouch */ = {
+			isa = PBXGroup;
+			children = (
+				42F3B9961BE9D9FB00C2D35C /* engineHeader */,
+				42F3B99C1BE9D9FB00C2D35C /* sourceCode */,
+				42F3B98D1BE9D97300C2D35C /* EUEx3DTouch.h */,
+				42F3B98F1BE9D97300C2D35C /* EUEx3DTouch.m */,
+			);
+			path = EUEx3DTouch;
+			sourceTree = "<group>";
+		};
+		42F3B9961BE9D9FB00C2D35C /* engineHeader */ = {
+			isa = PBXGroup;
+			children = (
+				42F3B9A71BE9DA7400C2D35C /* EUtility.h */,
+				42F3B9971BE9D9FB00C2D35C /* EUExBase+Bundle.h */,
+				42F3B9981BE9D9FB00C2D35C /* EUExBase.h */,
+				42F3B9991BE9D9FB00C2D35C /* EUExBaseDefine.h */,
+				42F3B99B1BE9D9FB00C2D35C /* WidgetOneDelegate.h */,
+			);
+			path = engineHeader;
+			sourceTree = "<group>";
+		};
+		42F3B99C1BE9D9FB00C2D35C /* sourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				42F3B99D1BE9D9FB00C2D35C /* JSON */,
+				42F3B9B11BE9DBDF00C2D35C /* PrefixHeader.pch */,
+			);
+			path = sourceCode;
+			sourceTree = "<group>";
+		};
+		42F3B99D1BE9D9FB00C2D35C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				42F3B99E1BE9D9FB00C2D35C /* JSON.h */,
+				42F3B99F1BE9D9FB00C2D35C /* JSONParser.h */,
+				42F3B9A01BE9D9FB00C2D35C /* MD5Digest.h */,
+				42F3B9A11BE9D9FB00C2D35C /* NSObject+SBJSON.h */,
+				42F3B9A21BE9D9FB00C2D35C /* NSString+SBJSON.h */,
+				42F3B9A31BE9D9FB00C2D35C /* SBJSON.h */,
+				42F3B9A41BE9D9FB00C2D35C /* SBJsonBase.h */,
+				42F3B9A51BE9D9FB00C2D35C /* SBJsonParser.h */,
+				42F3B9A61BE9D9FB00C2D35C /* SBJsonWriter.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42F3B9891BE9D97300C2D35C /* EUEx3DTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F3B9931BE9D97300C2D35C /* Build configuration list for PBXNativeTarget "EUEx3DTouch" */;
+			buildPhases = (
+				42F3B9861BE9D97300C2D35C /* Sources */,
+				42F3B9871BE9D97300C2D35C /* Frameworks */,
+				42F3B9881BE9D97300C2D35C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EUEx3DTouch;
+			productName = EUEx3DTouch;
+			productReference = 42F3B98A1BE9D97300C2D35C /* libuex3DTouch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42F3B9821BE9D97300C2D35C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = AppCan;
+				TargetAttributes = {
+					42F3B9891BE9D97300C2D35C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 42F3B9851BE9D97300C2D35C /* Build configuration list for PBXProject "EUEx3DTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42F3B9811BE9D97300C2D35C;
+			productRefGroup = 42F3B98B1BE9D97300C2D35C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42F3B9891BE9D97300C2D35C /* EUEx3DTouch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42F3B9861BE9D97300C2D35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F3B9901BE9D97300C2D35C /* EUEx3DTouch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		42F3B9911BE9D97300C2D35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42F3B9921BE9D97300C2D35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42F3B9941BE9D97300C2D35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uex3DTouch;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/EUEx3DTouch/sourceCode/PrefixHeader.pch;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = uex3DTouch;
+				PRODUCT_NAME = uex3DTouch;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		42F3B9951BE9D97300C2D35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uex3DTouch;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/EUEx3DTouch/sourceCode/PrefixHeader.pch;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = uex3DTouch;
+				PRODUCT_NAME = uex3DTouch;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42F3B9851BE9D97300C2D35C /* Build configuration list for PBXProject "EUEx3DTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F3B9911BE9D97300C2D35C /* Debug */,
+				42F3B9921BE9D97300C2D35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F3B9931BE9D97300C2D35C /* Build configuration list for PBXNativeTarget "EUEx3DTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F3B9941BE9D97300C2D35C /* Debug */,
+				42F3B9951BE9D97300C2D35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42F3B9821BE9D97300C2D35C /* Project object */;
+}

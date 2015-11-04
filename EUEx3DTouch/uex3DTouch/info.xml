@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uexplugins>
+    <plugin
+        uexName="uex3DTouch" version="3.0.0" build="0">
+ 
+        <build>0:3DTouch 功能插件</build>
+
+
+    </plugin>
+</uexplugins>
