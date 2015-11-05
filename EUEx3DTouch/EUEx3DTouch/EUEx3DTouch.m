@@ -8,6 +8,10 @@
 
 #import "EUEx3DTouch.h"
 #import "JSON.h"
+#import "uex3DTouchShortcutHandler.h"
+
+
+
 
 @interface EUEx3DTouch()
 
@@ -15,10 +19,30 @@
 
 @implementation EUEx3DTouch
 
++ (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
 
 
+    [[uex3DTouchShortcutHandler sharedHandler] handleAppDidFinishLaunchingEventWithOptions:launchOptions];
+    return YES;
+}
++ (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[uex3DTouchShortcutHandler sharedHandler] handleAppDidBecomeActiveEvent];
+    /*
+    if(self.shortcutHandler && self.isFirstPageDidLoad){
+        
+        self.shortcutHandler();
+        self.shortcutHandler=nil;
+    }
+     */
+}
 
++(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
+    [[uex3DTouchShortcutHandler sharedHandler] handleAppPerformActionForShortcutItemEventWithShortcutItem:shortcutItem];
+}
 
++(void)rootPageDidFinishLoading{
+    [[uex3DTouchShortcutHandler sharedHandler] handleRootPageDidFinishLoadingEvent];
+}
 
 -(void)setDynamicShortcutItems:(NSMutableArray *)inArguments{
     if([inArguments count] < 1){
