@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
     <plugin
-        uexName="uex3DTouch" version="3.0.1" build="1">
-        <info>1:添加IDE支持</info>
+        uexName="uex3DTouch" version="3.0.2" build="2">
+        <info>2:修复可能会与其他包含3DTouch功能的插件冲突的问题</info>
+        <build>1:添加IDE支持</build>
         <build>0:3DTouch 功能插件</build>
     </plugin>
 </uexplugins>

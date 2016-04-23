@@ -38,6 +38,9 @@
 
 +(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
     [[uex3DTouchShortcutHandler sharedHandler] handleAppPerformActionForShortcutItemEventWithShortcutItem:shortcutItem];
+    if (completionHandler) {
+        completionHandler(YES);
+    }
 }
 
 +(void)rootPageDidFinishLoading{
