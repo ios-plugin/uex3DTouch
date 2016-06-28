@@ -7,7 +7,6 @@
 //
 
 #import "EUEx3DTouch.h"
-#import "JSON.h"
 #import "uex3DTouchShortcutHandler.h"
 
 
@@ -43,26 +42,22 @@
     }
 }
 
-+(void)rootPageDidFinishLoading{
++ (void)rootPageDidFinishLoading{
     [[uex3DTouchShortcutHandler sharedHandler] handleRootPageDidFinishLoadingEvent];
 }
 
--(void)setDynamicShortcutItems:(NSMutableArray *)inArguments{
-    if([inArguments count] < 1){
-        return;
-    }
-    id info = [inArguments[0] JSONValue];
-    if(!info || ![info isKindOfClass:[NSArray class]]){
-        return;
-    }
-    NSMutableArray<UIApplicationShortcutItem *> *shortcuts=[NSMutableArray array];
-    for(int i=0;i<[info count];i++){
-        UIApplicationShortcutItem *item=[self parseShortcutItem:info[i]];
+- (void)setDynamicShortcutItems:(NSMutableArray *)inArguments{
+    ACArgsUnpack(NSArray *info) = inArguments;
+    
+    NSMutableArray<UIApplicationShortcutItem *> *shortcuts = [NSMutableArray array];
+    for(int i=0 ; i<[info count] ; i++){
+        UIApplicationShortcutItem *item = [self parseShortcutItem:info[i]];
         if(item){
             [shortcuts addObject:item];
         }
     }
     [[UIApplication sharedApplication] setShortcutItems:shortcuts];
+
     
 }
 -(UIApplicationShortcutItem *)parseShortcutItem:(NSDictionary *)shortcutInfo{
@@ -72,7 +67,7 @@
     if(![shortcutInfo objectForKey:@"type"] || ![shortcutInfo objectForKey:@"title"]){
         return nil;
     }
-    UIMutableApplicationShortcutItem *item =[[UIMutableApplicationShortcutItem alloc]initWithType:[shortcutInfo objectForKey:@"type"]
+    UIMutableApplicationShortcutItem *item = [[UIMutableApplicationShortcutItem alloc]initWithType:[shortcutInfo objectForKey:@"type"]
                                                                                    localizedTitle:[shortcutInfo objectForKey:@"title"]];
     UIApplicationShortcutIcon *icon=nil;
     NSArray *iconArray=@[@"UIApplicationShortcutIconTypeCompose",
@@ -107,10 +102,10 @@
 
     
     if([shortcutInfo objectForKey:@"iconType"] && [iconArray containsObject:[shortcutInfo objectForKey:@"iconType"]]){
-        icon=[UIApplicationShortcutIcon iconWithType:[iconArray indexOfObject:[shortcutInfo objectForKey:@"iconType"]]];
+        icon = [UIApplicationShortcutIcon iconWithType:[iconArray indexOfObject:[shortcutInfo objectForKey:@"iconType"]]];
     }
     if([shortcutInfo objectForKey:@"iconFile"] && [shortcutInfo[@"iconFile"] isKindOfClass:[NSString class]]){
-        icon=[UIApplicationShortcutIcon iconWithTemplateImageName:shortcutInfo[@"iconFile"]];
+        icon = [UIApplicationShortcutIcon iconWithTemplateImageName:shortcutInfo[@"iconFile"]];
     }
     if(icon){
         [item setIcon:icon];

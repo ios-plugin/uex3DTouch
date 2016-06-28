@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42626E411D2248F90062DF17 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42626E401D2248F90062DF17 /* AppCanKit.framework */; };
 		42F3B9901BE9D97300C2D35C /* EUEx3DTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B98F1BE9D97300C2D35C /* EUEx3DTouch.m */; };
 		42F3B9C11BEAE14600C2D35C /* uex3DTouchShortcutHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B9C01BEAE14600C2D35C /* uex3DTouchShortcutHandler.m */; };
 /* End PBXBuildFile section */
@@ -24,23 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		42626E401D2248F90062DF17 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 		42F3B98A1BE9D97300C2D35C /* libuex3DTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuex3DTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F3B98D1BE9D97300C2D35C /* EUEx3DTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUEx3DTouch.h; sourceTree = "<group>"; };
 		42F3B98F1BE9D97300C2D35C /* EUEx3DTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUEx3DTouch.m; sourceTree = "<group>"; };
-		42F3B9971BE9D9FB00C2D35C /* EUExBase+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EUExBase+Bundle.h"; sourceTree = "<group>"; };
-		42F3B9981BE9D9FB00C2D35C /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
-		42F3B9991BE9D9FB00C2D35C /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
-		42F3B99B1BE9D9FB00C2D35C /* WidgetOneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetOneDelegate.h; sourceTree = "<group>"; };
-		42F3B99E1BE9D9FB00C2D35C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		42F3B99F1BE9D9FB00C2D35C /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
-		42F3B9A01BE9D9FB00C2D35C /* MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Digest.h; sourceTree = "<group>"; };
-		42F3B9A11BE9D9FB00C2D35C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		42F3B9A21BE9D9FB00C2D35C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		42F3B9A31BE9D9FB00C2D35C /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
-		42F3B9A41BE9D9FB00C2D35C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
-		42F3B9A51BE9D9FB00C2D35C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		42F3B9A61BE9D9FB00C2D35C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		42F3B9A71BE9DA7400C2D35C /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
 		42F3B9B11BE9DBDF00C2D35C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		42F3B9BF1BEAE14600C2D35C /* uex3DTouchShortcutHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uex3DTouchShortcutHandler.h; sourceTree = "<group>"; };
 		42F3B9C01BEAE14600C2D35C /* uex3DTouchShortcutHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uex3DTouchShortcutHandler.m; sourceTree = "<group>"; };
@@ -51,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42626E411D2248F90062DF17 /* AppCanKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +65,7 @@
 		42F3B98C1BE9D97300C2D35C /* EUEx3DTouch */ = {
 			isa = PBXGroup;
 			children = (
-				42F3B9961BE9D9FB00C2D35C /* engineHeader */,
+				42626E401D2248F90062DF17 /* AppCanKit.framework */,
 				42F3B99C1BE9D9FB00C2D35C /* sourceCode */,
 				42F3B98D1BE9D97300C2D35C /* EUEx3DTouch.h */,
 				42F3B98F1BE9D97300C2D35C /* EUEx3DTouch.m */,
@@ -84,43 +73,14 @@
 			path = EUEx3DTouch;
 			sourceTree = "<group>";
 		};
-		42F3B9961BE9D9FB00C2D35C /* engineHeader */ = {
-			isa = PBXGroup;
-			children = (
-				42F3B9A71BE9DA7400C2D35C /* EUtility.h */,
-				42F3B9971BE9D9FB00C2D35C /* EUExBase+Bundle.h */,
-				42F3B9981BE9D9FB00C2D35C /* EUExBase.h */,
-				42F3B9991BE9D9FB00C2D35C /* EUExBaseDefine.h */,
-				42F3B99B1BE9D9FB00C2D35C /* WidgetOneDelegate.h */,
-			);
-			path = engineHeader;
-			sourceTree = "<group>";
-		};
 		42F3B99C1BE9D9FB00C2D35C /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
-				42F3B99D1BE9D9FB00C2D35C /* JSON */,
 				42F3B9B11BE9DBDF00C2D35C /* PrefixHeader.pch */,
 				42F3B9BF1BEAE14600C2D35C /* uex3DTouchShortcutHandler.h */,
 				42F3B9C01BEAE14600C2D35C /* uex3DTouchShortcutHandler.m */,
 			);
 			path = sourceCode;
-			sourceTree = "<group>";
-		};
-		42F3B99D1BE9D9FB00C2D35C /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				42F3B99E1BE9D9FB00C2D35C /* JSON.h */,
-				42F3B99F1BE9D9FB00C2D35C /* JSONParser.h */,
-				42F3B9A01BE9D9FB00C2D35C /* MD5Digest.h */,
-				42F3B9A11BE9D9FB00C2D35C /* NSObject+SBJSON.h */,
-				42F3B9A21BE9D9FB00C2D35C /* NSString+SBJSON.h */,
-				42F3B9A31BE9D9FB00C2D35C /* SBJSON.h */,
-				42F3B9A41BE9D9FB00C2D35C /* SBJsonBase.h */,
-				42F3B9A51BE9D9FB00C2D35C /* SBJsonParser.h */,
-				42F3B9A61BE9D9FB00C2D35C /* SBJsonWriter.h */,
-			);
-			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +231,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = $SRCROOT/uex3DTouch;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUEx3DTouch",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/EUEx3DTouch/sourceCode/PrefixHeader.pch;
 				OTHER_LDFLAGS = "-ObjC";
@@ -284,6 +248,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = $SRCROOT/uex3DTouch;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUEx3DTouch",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/EUEx3DTouch/sourceCode/PrefixHeader.pch;
 				OTHER_LDFLAGS = "-ObjC";
