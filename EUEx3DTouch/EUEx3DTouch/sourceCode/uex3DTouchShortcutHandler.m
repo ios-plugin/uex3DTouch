@@ -7,10 +7,10 @@
 //
 
 #import "uex3DTouchShortcutHandler.h"
-#import "EUtility.h"
+#import <AppCanKit/AppCanKit.h>
 typedef void (^AppShortcutLoadingHandler)(void);
 typedef NS_ENUM(NSInteger,uex3DTouchShortcutHandleStatus) {
-    uex3DTouchHandleOnLaunchApp=0,
+    uex3DTouchHandleOnLaunchApp = 0,
     uex3DTouchHandleOnWakeFromBackground,
 };
 
@@ -37,8 +37,8 @@ typedef NS_ENUM(NSInteger,uex3DTouchShortcutHandleStatus) {
 {
     self = [super init];
     if (self) {
-        self.status=uex3DTouchHandleOnWakeFromBackground;
-        self.rootPageDidFinishLoading=NO;
+        self.status = uex3DTouchHandleOnWakeFromBackground;
+        self.rootPageDidFinishLoading = NO;
     }
     return self;
 }
@@ -48,27 +48,25 @@ typedef NS_ENUM(NSInteger,uex3DTouchShortcutHandleStatus) {
 -(void)handleRootPageDidFinishLoadingEvent{
     if(self.shortcutCallbackBlock){
         self.shortcutCallbackBlock();
-        self.shortcutCallbackBlock=nil;
+        self.shortcutCallbackBlock = nil;
     }
-    self.rootPageDidFinishLoading=YES;
+    self.rootPageDidFinishLoading = YES;
 }
 
 -(void)handleAppPerformActionForShortcutItemEventWithShortcutItem:(UIApplicationShortcutItem *)shortcutItem{
     [self setCallbackBlockWithShortcutItem:shortcutItem status:self.status];
-    self.status=uex3DTouchHandleOnWakeFromBackground;
+    self.status = uex3DTouchHandleOnWakeFromBackground;
 }
 
 -(void)handleAppDidBecomeActiveEvent{
     if(self.shortcutCallbackBlock && self.rootPageDidFinishLoading){
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(300 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
-            self.shortcutCallbackBlock();
-            self.shortcutCallbackBlock=nil;
-        });
+        self.shortcutCallbackBlock();
+        self.shortcutCallbackBlock = nil;
     }
 }
 -(void)handleAppDidFinishLaunchingEventWithOptions:(NSDictionary *)launchOptions{
     if([launchOptions objectForKey:UIApplicationLaunchOptionsShortcutItemKey]){
-        self.status=uex3DTouchHandleOnLaunchApp;
+        self.status = uex3DTouchHandleOnLaunchApp;
     }
 }
 
@@ -78,8 +76,10 @@ typedef NS_ENUM(NSInteger,uex3DTouchShortcutHandleStatus) {
     [shortcutInfo setValue:shortcutItem.type forKey:@"type"];
     [shortcutInfo setValue:@(status) forKey:@"status"];
     [shortcutInfo setValue:shortcutItem.userInfo forKey:@"info"];
-    self.shortcutCallbackBlock=^{
-        [EUtility uexPlugin:@"uex3DTouch" callbackByName:@"onLoadByShortcutClickEvent" withObject:shortcutInfo andType:uexPluginCallbackWithJsonString inTarget:cUexPluginCallbackInRootWindow];
+    self.shortcutCallbackBlock = ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(300 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+            [AppCanRootWebViewEngine() callbackWithFunctionKeyPath:@"uex3DTouch.onLoadByShortcutClickEvent" arguments:ACArgsPack(shortcutInfo.ac_JSONFragment)];
+        });
     };
     
 }
